@@ -1,0 +1,15 @@
+A classe foi encontrada nos seguintes locais:
+-2 - ./Main.jar
+-1 - ./Main.class
+0 - ./Main$1.class
+1 - ./Main2.class
+2 - ./Main3.class
+3 - ./Main4.class
+4 - ./Main5.class
+5 - ./Main6.class
+6 - ./Main7.class
+7 - ./Main8.class
+8 - ./Main9.class
+9 - ./Main10.class
+Tempo gasto: 34 ms
+Número de arquivos .class .jar e .war em a classeMain foi encontrada: 12
