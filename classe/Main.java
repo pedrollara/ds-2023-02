@@ -49,7 +49,7 @@ public class Main {
             }
         };
 
-        Collections.sort(arquivos, customComparator);
+        arquivos.sort(customComparator);
             
 
             long endTime = System.currentTimeMillis();

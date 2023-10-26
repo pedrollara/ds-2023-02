@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Enum/Enum.iml" filepath="$PROJECT_DIR$/Enum/Enum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/anotacao/anotacao.iml" filepath="$PROJECT_DIR$/anotacao/anotacao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ds-2023-02.iml" filepath="$PROJECT_DIR$/ds-2023-02.iml" />
+    </modules>
+  </component>
+</project>
