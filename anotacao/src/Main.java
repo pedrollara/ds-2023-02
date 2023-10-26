@@ -27,13 +27,11 @@ class Observable {
         for (Method method : methods) {
             if (method.isAnnotationPresent(Observer.class)) {
                 String observado = method.getAnnotation(Observer.class).observado();
-                if (!observers.containsKey(observado)) {
-                    observers.put(observado, new ArrayList<>());
-                }
-                observers.get(observado).add(method);
+                observers.computeIfAbsent(observado, k -> new ArrayList<>()).add(method);
             }
         }
     }
+
 
     public void removeObserver(Object observer) {
         Class<?> observerClass = observer.getClass();
@@ -50,16 +48,15 @@ class Observable {
     }
 
     public void notifyObservers(String observado, String mensagem) {
-        if (observers.containsKey(observado)) {
-            for (Method method : observers.get(observado)) {
-                try {
-                    method.invoke(method.getDeclaringClass().newInstance(), mensagem);
-                } catch (IllegalAccessException | InstantiationException | InvocationTargetException e) {
-                    e.printStackTrace();
-                }
+        observers.getOrDefault(observado, new ArrayList<>()).forEach(method -> {
+            try {
+                method.invoke(method.getDeclaringClass().newInstance(), mensagem);
+            } catch (IllegalAccessException | InstantiationException | InvocationTargetException e) {
+                e.printStackTrace();
             }
-        }
+        });
     }
+
 
     public void evento(String mensagem) {
         notifyObservers(identificador, mensagem);
