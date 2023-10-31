@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Enum/Enum.iml" filepath="$PROJECT_DIR$/Enum/Enum.iml" />
       <module fileurl="file://$PROJECT_DIR$/anotacao/anotacao.iml" filepath="$PROJECT_DIR$/anotacao/anotacao.iml" />
       <module fileurl="file://$PROJECT_DIR$/ds-2023-02.iml" filepath="$PROJECT_DIR$/ds-2023-02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/expressao/expressao.iml" filepath="$PROJECT_DIR$/expressao/expressao.iml" />
     </modules>
   </component>
 </project>
